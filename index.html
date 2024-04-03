@@ -44,7 +44,7 @@
 <h1 align="middle">Final Project Proposal: Text to 3D Cloud Point Simulator </h1>
 <h2 align="middle">Ralph Cao, Arjun Damerla, Preston Fu, Julia Sun</h2>
 
-<br><br>
+<br>
 
 <div>
 
@@ -102,13 +102,15 @@ Show images with normal shading for a few small .dae files. -->
     </li>
     <li> <h3 align="left">Aspirational Plan</h3>
         <ul>
-            <li>insert stuff about rendering for snowglobe</li>
+            <li>If our original particle simulation is successful and we get ahead of schedule, we would want to implement a snowglobe where the particles are suspended in fluid i.e particles are assigned different gravities. For these new particles, we can apply a new particle simulator. One option is to implement a 3D fluid solver which utilizes both the Particle-In-Cell (PIC) and FLuid Implicit Particle (FLIP) methods to create liquid simulation with parameters for gravity and viscosity. Another particle simulator we can use is the Position Based Fluids algorithm to generate a liquid effect. This algorithm implements CUDA acceleration and achieves 60fps simulation for thousands of particles. However, we may need to make some adjustments to these implementations if our new particles interact poorly with the existing ones.</li>
+            <li>We could also support upsampling of the point cloud so that the program can be run with larger amounts of boids.</li>
         </ul>
     </li>
 </ul>
 <br>
 
 <h2 align="middle">Schedule</h2>
+
 
 <ul>
     <li> <h3 align="left">4/2 - 4/8:</h3>
